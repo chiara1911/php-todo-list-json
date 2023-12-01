@@ -27,6 +27,18 @@
     <title>PHP ToDo List JSON</title>
 </head>
 <body>
+<div class="wrapper">
+            <div id="app">
+                <div class="col-12">
+                    <ul>
+                        <li v-for =>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   
     
 </body>
 </html>
