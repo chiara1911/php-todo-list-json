@@ -26,10 +26,10 @@
     <div class="wrapper">
         <div id="app">
             <div class="col-12">
-                <h2>TODO List da fare</h2>
+                <h2>Articoli da fare</h2>
                 <ul class="list-unstyled">
-                    <li v-for="text in todoEl">
-                        {{text}}
+                    <li v-for="item in todoEl">
+                        {{item.text}}
                     </li>
                 </ul>
             </div>

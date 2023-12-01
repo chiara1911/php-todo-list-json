@@ -11,7 +11,7 @@ createApp({
     methods: {
         stampEl (){
             axios.get(this.apiUrl).then((response)=>{
-                console.log(response)
+               
                 this.todoEl= response.data;
                 
             })
