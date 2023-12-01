@@ -26,10 +26,13 @@
     <div class="wrapper">
         <div id="app">
             <div class="col-12">
-                <h2>Articoli da fare</h2>
-                <ul class="list-unstyled">
-                    <li v-for="item in todoEl">
+                <h2>Articoli da fare</h2>             
+                <input type="text" placeholder="aggiungi nuovi articoli da fare" class="m-auto w-25" v-model ="newTask">
+                <button type="submit" @click="addEl">aggiungi</button>
+                <ul class="list-unstyled">                    
+                    <li v-for="(item,index) in todoEl" >
                         {{item.text}}
+                        <span @click="removeEl(index)">x</span>
                     </li>
                 </ul>
             </div>
